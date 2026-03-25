@@ -29,6 +29,19 @@ body {
   padding: 22px 0 16px;
 }
 
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.eth-logo {
+  height: 72px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
 .brand h1 {
   margin: 0;
   font-size: 1.75rem;
@@ -131,12 +144,6 @@ body {
   padding: 56px 0;
 }
 
-.section.alt {
-  background: #ffffff;
-  border-top: 1px solid #e5e7eb;
-  border-bottom: 1px solid #e5e7eb;
-}
-
 .page-title {
   margin: 0 0 28px;
   font-size: 2.2rem;
@@ -154,7 +161,8 @@ body {
   gap: 20px;
 }
 
-.card {
+.card,
+.team-card {
   background: #ffffff;
   border: 1px solid #e5e7eb;
   border-radius: 16px;
@@ -162,15 +170,37 @@ body {
   box-shadow: 0 8px 24px rgba(17, 24, 39, 0.04);
 }
 
-.card h3 {
+.card h3,
+.team-card h3 {
   margin-top: 0;
   margin-bottom: 10px;
   color: #111827;
 }
 
-.card p {
-  margin: 0;
+.card p,
+.team-card p {
+  margin: 0 0 12px;
   color: #4b5563;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.team-photo {
+  width: 100%;
+  max-width: 260px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 16px;
+}
+
+.role {
+  font-weight: 600;
+  color: #6b7280;
 }
 
 .site-footer {
@@ -188,12 +218,30 @@ body {
   flex-wrap: wrap;
 }
 
+a {
+  color: #111827;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
 @media (max-width: 900px) {
-  .grid-3 {
+  .grid-3,
+  .team-grid {
     grid-template-columns: 1fr;
   }
 
   .hero {
     padding: 56px 0 40px;
+  }
+
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .eth-logo {
+    height: 60px;
   }
 }
