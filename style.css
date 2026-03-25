@@ -31,15 +31,17 @@ body {
 
 .topbar {
   display: flex;
-  align-items: center;
-  gap: 18px;
+  align-items: flex-start;
+  gap: 12px;
 }
 
 .eth-logo {
-  height: 72px;
+  height: 36px;
   width: auto;
   display: block;
   object-fit: contain;
+  margin-top: 2px;
+  flex-shrink: 0;
 }
 
 .brand h1 {
