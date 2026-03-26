@@ -296,3 +296,13 @@ a:hover {
 .publication-list a {
   font-weight: 600;
 }
+.section-top {
+  margin-top: 48px;
+  margin-bottom: 20px;
+}
+
+.section-top h3 {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #111827;
+}
