@@ -33,9 +33,21 @@
       <p class="eyebrow">Research</p>
       <h2 class="page-title">Research Themes</h2>
 
-      <div class="stack">
+      <div class="research-tabs">
+        <button class="tab-button active" onclick="openResearchTab(event, 'tab1')">
+          Cardiac and Muscle Models
+        </button>
+        <button class="tab-button" onclick="openResearchTab(event, 'tab2')">
+          In Situ Biofabrication
+        </button>
+        <button class="tab-button" onclick="openResearchTab(event, 'tab3')">
+          Microgravity and Space
+        </button>
+      </div>
+
+      <div id="tab1" class="tab-content active">
         <article class="card">
-          <h3>1. Biofabrication and automated functional characterization of miniaturized cardiac and skeletal muscle models</h3>
+          <h3>Biofabrication and automated functional characterization of miniaturized cardiac and skeletal muscle models</h3>
           <p>
             Cardiac and skeletal muscle pathologies remain a leading cause of death and disability worldwide. In addition,
             cytotoxicity in these tissues is a major driver of post-marketing safety actions for therapies. Quantitative functional
@@ -53,7 +65,47 @@
         </article>
 
         <article class="card">
-          <h3>2. Rapid in situ biofabrication using light and sound</h3>
+          <h3>Google Scholar</h3>
+          <p>
+            See the full list of publications, sorted by publication date, on
+            <a href="https://scholar.google.com/citations?hl=en&user=t23IbHcAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">
+              Google Scholar
+            </a>.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Selected Publications</h3>
+          <ol class="publication-list">
+            <li>
+              Winkelbauer M., Hasenauer A., Liu H., Rütsche D., Janiak J., Nguyen M., Christman K., Zenobi-Wong M, Chansoria P*. (2025)
+              <em>Rapid deep vat printing using photoclickable collagen-based bioresins.</em>
+              <strong>Advanced Healthcare Materials</strong>.
+              <a href="https://doi.org/10.1002/adhm.202405105" target="_blank">DOI</a>
+            </li>
+            <li>
+              Winkelbauer M., Generali M., Cheng K., Emmert M., Chansoria P*. (2026)
+              <em>Epicardial patches for myocardial repair: Circumventing barrier to healing ischemic heart tissue.</em>
+              <strong>Trends in Biotechnology</strong>.
+              <a href="https://doi.org/10.1016/j.tibtech.2026.01.014" target="_blank">DOI</a>
+            </li>
+          </ol>
+        </article>
+
+        <article class="card">
+          <h3>Acknowledgements</h3>
+          <p>
+            This research theme is supported by close interdisciplinary collaboration across biomaterials,
+            biofabrication, tissue engineering, and translational muscle and cardiac biology. We gratefully
+            acknowledge collaborators, students, and partner laboratories contributing to model development,
+            fabrication strategies, and functional analysis workflows.
+          </p>
+        </article>
+      </div>
+
+      <div id="tab2" class="tab-content">
+        <article class="card">
+          <h3>Rapid in situ biofabrication using light and sound</h3>
           <p>
             Advanced biofabrication approaches have transformed tissue engineering and regenerative medicine by enabling the creation
             of biomimetic tissue grafts for disease modeling and tissue repair. Over the last decade, new in situ strategies have emerged
@@ -67,7 +119,40 @@
         </article>
 
         <article class="card">
-          <h3>3. Engineering of muscle and cardiac tissues in microgravity and space</h3>
+          <h3>Google Scholar</h3>
+          <p>
+            See the full list of publications, sorted by publication date, on
+            <a href="https://scholar.google.com/citations?hl=en&user=t23IbHcAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">
+              Google Scholar
+            </a>.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Selected Publications</h3>
+          <ol class="publication-list">
+            <li>
+              Chansoria P., Winkelbauer M., Zhang S., Janiak J., Boev D., Morandi A., Grange R., Zenobi-Wong M. (2025)
+              <em>Structured light projection using image guide fibers for in situ photo-biofabrication.</em>
+              <strong>Advanced Materials</strong>.
+              <a href="https://doi.org/10.1002/adma.202419350" target="_blank">DOI</a>
+            </li>
+          </ol>
+        </article>
+
+        <article class="card">
+          <h3>Acknowledgements</h3>
+          <p>
+            We gratefully acknowledge collaborators and trainees contributing to biomaterials development,
+            structured light delivery, and translational biofabrication concepts. This work benefits from
+            interdisciplinary exchange across bioengineering, materials science, and regenerative medicine.
+          </p>
+        </article>
+      </div>
+
+      <div id="tab3" class="tab-content">
+        <article class="card">
+          <h3>Engineering of muscle and cardiac tissues in microgravity and space</h3>
           <p>
             Microgravity disrupts force balance and mechanotransduction, leading to rapid changes in cytoskeletal organization, metabolism,
             and tissue remodeling. Phenotypes such as muscle atrophy, cardiac deconditioning, fibrosis, and immune dysregulation emerge on
@@ -77,6 +162,37 @@
           <p>
             The METS Lab has successfully led collaborative work on printing muscle tissues in microgravity conditions, and we are now partnering
             with ETH Space to deploy prefabricated muscle and cardiac tissues in custom perfusable bioreactors in space.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Google Scholar</h3>
+          <p>
+            See the full list of publications, sorted by publication date, on
+            <a href="https://scholar.google.com/citations?hl=en&user=t23IbHcAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">
+              Google Scholar
+            </a>.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Selected Publications</h3>
+          <ol class="publication-list">
+            <li>
+              Winkelbauer M., Janiak J., Windisch J, Liu H., Bulatova M., Witzleben M.V., Oliveira H., Dani S., Richter R.F., L’Heureux N., Bar-Nur O., Gelinsky M., Zenobi-Wong M., Chansoria P*. (2025)
+              <em>Long-term cell encapsulation and gravity-independent filamented light biofabrication of muscle constructs.</em>
+              <strong>Advanced Science</strong>.
+              <a href="https://doi.org/10.1002/advs.202512727" target="_blank">DOI</a>
+            </li>
+          </ol>
+        </article>
+
+        <article class="card">
+          <h3>Acknowledgements</h3>
+          <p>
+            We gratefully acknowledge the collaborative efforts of our partners in biomaterials, biofabrication,
+            muscle biology, and space engineering, as well as ongoing collaboration with ETH Space for the development
+            of deployable tissue platforms for microgravity research.
           </p>
         </article>
       </div>
@@ -89,5 +205,23 @@
       <p>ETH Zurich · Zurich, Switzerland</p>
     </div>
   </footer>
+
+  <script>
+    function openResearchTab(evt, tabId) {
+      const tabs = document.getElementsByClassName("tab-content");
+      const buttons = document.getElementsByClassName("tab-button");
+
+      for (let i = 0; i < tabs.length; i++) {
+        tabs[i].classList.remove("active");
+      }
+
+      for (let i = 0; i < buttons.length; i++) {
+        buttons[i].classList.remove("active");
+      }
+
+      document.getElementById(tabId).classList.add("active");
+      evt.currentTarget.classList.add("active");
+    }
+  </script>
 </body>
 </html>
