@@ -44,6 +44,15 @@ body {
   flex-shrink: 0;
 }
 
+.mets-logo {
+  height: 24px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
 .brand h1 {
   margin: 0;
   font-size: 1.75rem;
