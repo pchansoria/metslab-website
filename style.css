@@ -103,8 +103,8 @@ body {
 
 .hero h2 {
   margin: 0;
-  font-size: clamp(2rem, 4vw, 3.4rem);
-  line-height: 1.15;
+  font-size: clamp(1.6rem, 3vw, 2.6rem);
+  line-height: 1.18;
   max-width: 900px;
   color: #111827;
 }
