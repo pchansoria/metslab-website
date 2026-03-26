@@ -306,3 +306,30 @@ a:hover {
   font-size: 1.6rem;
   color: #111827;
 }
+
+.funding-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 28px;
+  padding: 18px 0 8px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.funding-logo {
+  height: 42px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .funding-row {
+    gap: 18px;
+  }
+
+  .funding-logo {
+    height: 34px;
+  }
+}
