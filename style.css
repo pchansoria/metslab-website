@@ -253,8 +253,14 @@ a:hover {
   }
 
   .eth-logo {
-    height: 60px;
-  }
+  height: 24px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  margin-top: 4px;
+  margin-bottom: 32px;
+  flex-shrink: 0;
+}
 }
 .research-tabs {
   display: flex;
