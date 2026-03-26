@@ -307,12 +307,7 @@ a:hover {
   color: #111827;
 }
 
-.funding-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 28px;
+.funding-block {
   padding: 18px 0 8px;
   border-top: 1px solid #e5e7eb;
 }
@@ -324,21 +319,17 @@ a:hover {
   color: #374151;
 }
 
-.funding-logo {
-  max-height: 64px;
-  max-width: 250px;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  display: block;
+.funding-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 28px;
 }
 
-@media (max-width: 900px) {
-  .funding-row {
-    gap: 18px;
-  }
-
-  .funding-logo {
-    height: 34px;
-  }
+.funding-logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  display: block;
 }
