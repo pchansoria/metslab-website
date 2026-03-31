@@ -45,7 +45,7 @@ body {
 }
 
 .mets-logo {
-  height: 48px;
+  height: 64px;
   width: auto;
   display: block;
   object-fit: contain;
@@ -349,7 +349,7 @@ a:hover {
   display: block;
 }
 .content-logo {
-  height: 72px;
+  height: 64px;
   width: auto;
   display: block;
   margin-bottom: 24px;
