@@ -89,7 +89,11 @@ body {
 
 .hero {
   position: relative;
-  padding: 80px 0 64px;
+  width: 100%;
+  padding: 110px 0 90px; /* Increased top/bottom padding gives the video vertical breathing room */
+  min-height: 540px;    /* Taller frame reveals much more of the video's vertical area */
+  display: flex;
+  align-items: center;
   overflow: hidden;
   background: #f6f7f9;
 }
@@ -100,9 +104,10 @@ body {
   left: 50%;
   width: 100%;
   height: 100%;
+  min-width: 100%;
+  min-height: 100%;
   object-fit: cover;
-  /* Slightly zooms out the video frame (adjust 0.92 if you want more/less unzoom) */
-  transform: translate(-50%, -50%) scale(0.92);
+  transform: translate(-50%, -50%); /* Removed scale() so video expands edge-to-edge */
   z-index: 1;
 }
 
@@ -112,9 +117,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  /* Reduced overlay from 0.82 to 0.45 so the video is clearly visible */
   background: rgba(246, 247, 249, 0.45);
-  /* Optional: removed blur so video details stay crisp */
   z-index: 2;
 }
 
