@@ -388,3 +388,48 @@ a:hover {
   display: block;
   margin-bottom: 24px;
 }
+/* Shared Background Section Styling */
+.section-has-bg {
+  position: relative;
+  overflow: hidden;
+  background: #f6f7f9;
+}
+
+/* Contact Page Video Background */
+.bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+/* Research Page Image Background */
+.research-bg {
+  background-image: url('Research.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* 0.6 Light Overlay for Crisp Content Readability */
+.bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(246, 247, 249, 0.6);
+  z-index: 2;
+}
+
+/* Ensures text, cards, and tabs sit above video/image overlay */
+.section-content {
+  position: relative;
+  z-index: 3;
+}
