@@ -90,20 +90,19 @@ body {
 .hero {
   position: relative;
   padding: 80px 0 64px;
-  overflow: hidden; /* Keeps video inside the container */
-  background: #f6f7f9; /* Fallback while video loads */
+  overflow: hidden;
+  background: #f6f7f9;
 }
 
 .hero-video {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  /* Slightly zooms out the video frame (adjust 0.92 if you want more/less unzoom) */
+  transform: translate(-50%, -50%) scale(0.92);
   z-index: 1;
 }
 
@@ -113,15 +112,15 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  /* Light overlay keeps dark text readable. Adjust opacity (0.82) if needed */
-  background: rgba(246, 247, 249, 0.82);
-  backdrop-filter: blur(2px); /* Subtle blur effect */
+  /* Reduced overlay from 0.82 to 0.45 so the video is clearly visible */
+  background: rgba(246, 247, 249, 0.45);
+  /* Optional: removed blur so video details stay crisp */
   z-index: 2;
 }
 
 .hero-content {
   position: relative;
-  z-index: 3; /* Places text and logo above video and overlay */
+  z-index: 3;
 }
 
 .eyebrow {
