@@ -409,12 +409,20 @@ a:hover {
   z-index: 1;
 }
 
-/* Research Page Image Background */
+/* Research Page Image Background - Fixed scaling across tab switching */
 .research-bg {
   background-image: url('Research.png');
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
+  background-attachment: fixed; /* Prevents background scale jumping when switching tabs */
+}
+
+/* Semi-transparent frosted card style over video & image backgrounds */
+.section-has-bg .card {
+  background: rgba(255, 255, 255, 0.82); /* 82% white opacity allows background to show through */
+  backdrop-filter: blur(8px); /* Frosted-glass effect for clean contrast */
+  border: 1px solid rgba(229, 231, 235, 0.6);
 }
 
 /* 0.6 Light Overlay for Crisp Content Readability */
