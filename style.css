@@ -88,8 +88,40 @@ body {
 }
 
 .hero {
-  padding: 72px 0 56px;
-  background: linear-gradient(to bottom, #ffffff, #f6f7f9);
+  position: relative;
+  padding: 80px 0 64px;
+  overflow: hidden; /* Keeps video inside the container */
+  background: #f6f7f9; /* Fallback while video loads */
+}
+
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Light overlay keeps dark text readable. Adjust opacity (0.82) if needed */
+  background: rgba(246, 247, 249, 0.82);
+  backdrop-filter: blur(2px); /* Subtle blur effect */
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3; /* Places text and logo above video and overlay */
 }
 
 .eyebrow {
