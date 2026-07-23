@@ -233,8 +233,21 @@
       }
 
       document.getElementById(tabId).classList.add("active");
-      evt.currentTarget.classList.add("active");
+      if (evt && evt.currentTarget) {
+        evt.currentTarget.classList.add("active");
+      }
     }
+
+    // Automatically trigger tab click if arriving via anchor link (e.g., research.html#tab2)
+    window.addEventListener("DOMContentLoaded", function () {
+      const hash = window.location.hash.replace("#", "");
+      if (hash && document.getElementById(hash)) {
+        const tabButton = document.querySelector(`[onclick*="'${hash}'"]`);
+        if (tabButton) {
+          tabButton.click();
+        }
+      }
+    });
   </script>
 </body>
 </html>
