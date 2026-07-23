@@ -441,3 +441,49 @@ a:hover {
   position: relative;
   z-index: 3;
 }
+/* Expandable Cards on Home Page */
+.expandable-card {
+  align-self: start; /* Prevents neighboring grid cards from distorting during expansion */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.expandable-card h3 {
+  margin-bottom: 0; /* Keeps title compact when collapsed */
+  transition: margin-bottom 0.3s ease;
+}
+
+.expandable-card:hover h3 {
+  margin-bottom: 12px; /* Adds space above body text on hover */
+}
+
+/* Initially hides card content body */
+.card-content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Smooth expansion on hover */
+.expandable-card:hover .card-content {
+  max-height: 200px;
+  opacity: 1;
+}
+
+/* Bottom-right aligned "Read more..." link */
+.read-more {
+  display: block;
+  text-align: right;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #111827;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.read-more:hover {
+  color: #2563eb;
+  transform: translateX(3px); /* Subtle rightward movement on hover */
+}
