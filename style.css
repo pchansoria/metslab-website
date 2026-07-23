@@ -441,20 +441,23 @@ a:hover {
   position: relative;
   z-index: 3;
 }
+
 /* Expandable Cards on Home Page */
 .expandable-card {
-  align-self: start; /* Prevents neighboring grid cards from distorting during expansion */
+  align-self: start;
+  text-align: center; /* Center-aligns title and description inside the box */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
 }
 
 .expandable-card h3 {
-  margin-bottom: 0; /* Keeps title compact when collapsed */
+  margin-bottom: 0;
+  text-align: center;
   transition: margin-bottom 0.3s ease;
 }
 
 .expandable-card:hover h3 {
-  margin-bottom: 12px; /* Adds space above body text on hover */
+  margin-bottom: 12px;
 }
 
 /* Initially hides card content body */
