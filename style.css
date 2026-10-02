@@ -95,32 +95,26 @@ body {
   display: flex;
   align-items: center;
   overflow: hidden;
-  background: radial-gradient(ellipse at 85% 25%, #deeff1, transparent 65%), #f6f7f9;
+  background: #f6f7f9;
 }
 
-.hero-dots {
+.dot-region {
+  position: relative;
+  isolation: isolate;
+}
+
+.dot-region > :not(.site-dots) {
+  position: relative;
+  z-index: 1;
+}
+
+.site-dots {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   pointer-events: none;
-}
-
-.hero-content h2 {
-  text-shadow: 0 1px 12px #f6f7f9;
-}
-
-.motion-toggle {
-  font: inherit;
-  font-size: 0.85rem;
-  color: #455b65;
-  background: rgba(255, 255, 255, 0.85);
-  border: 1px solid #cddde1;
-  cursor: pointer;
-}
-
-.motion-toggle[hidden] {
-  display: none;
+  z-index: 0;
 }
 
 .button:focus-visible {

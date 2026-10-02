@@ -2,13 +2,17 @@
 (() => {
   'use strict';
 
-  const canvas = document.querySelector('.hero-dots');
-  if (!canvas) return;
+  // Video/image background sections are excluded; each other region gets its own canvas.
+  const regions = document.querySelectorAll('.site-header, .site-footer, main > .section:not(.section-has-bg), main.section:not(.section-has-bg)');
+  regions.forEach(hero => {
+  if (hero.querySelector('video')) return;
+  const canvas = document.createElement('canvas');
+  canvas.className = 'site-dots';
+  canvas.setAttribute('aria-hidden', 'true');
+  hero.classList.add('dot-region');
+  hero.prepend(canvas);
   const context = canvas.getContext('2d');
   if (!context) return;
-  const hero = canvas.closest('.hero');
-  const toggle = hero.querySelector('.motion-toggle');
-  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const colors = ['#168c9b', '#2878a2', '#65aba9'];
   const pointer = { x: 0, y: 0, active: false };
   let width = 0;
@@ -17,7 +21,6 @@
   let frame = 0;
   let lastTime = 0;
   let visible = true;
-  let paused = reducedMotion.matches;
 
   function resize() {
     const bounds = hero.getBoundingClientRect();
@@ -80,35 +83,19 @@
   function syncAnimation() {
     cancelAnimationFrame(frame);
     lastTime = 0;
-    const staticMode = paused;
-    toggle.hidden = false;
-    toggle.textContent = paused ? 'Resume animation' : 'Pause animation';
-    toggle.setAttribute('aria-pressed', String(paused));
-    if (!staticMode && visible && !document.hidden) {
+    if (visible && !document.hidden) {
       frame = requestAnimationFrame(animate);
-    } else if (staticMode) {
-      draw(0);
     }
   }
 
   hero.addEventListener('pointermove', event => {
-    if (event.pointerType === 'touch' || paused) return;
+    if (event.pointerType === 'touch') return;
     const bounds = hero.getBoundingClientRect();
     pointer.x = event.clientX - bounds.left;
     pointer.y = event.clientY - bounds.top;
     pointer.active = true;
   }, { passive: true });
   hero.addEventListener('pointerleave', () => { pointer.active = false; });
-  toggle.addEventListener('click', () => {
-    paused = !paused;
-    pointer.active = false;
-    syncAnimation();
-  });
-  reducedMotion.addEventListener('change', () => {
-    paused = reducedMotion.matches;
-    pointer.active = false;
-    syncAnimation();
-  });
   document.addEventListener('visibilitychange', syncAnimation);
   new ResizeObserver(resize).observe(hero);
   new IntersectionObserver(entries => {
@@ -117,4 +104,5 @@
   }).observe(hero);
   resize();
   syncAnimation();
+  });
 })();

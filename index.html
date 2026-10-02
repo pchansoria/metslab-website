@@ -34,7 +34,10 @@
 
   <main>
     <section class="hero">
-  <canvas class="hero-dots" aria-hidden="true"></canvas>
+  <video class="hero-video" autoplay loop muted playsinline preload="auto">
+    <source src="bg-video.mp4" type="video/mp4" />
+  </video>
+  <div class="hero-overlay"></div>
 
   <!-- Hero Content -->
   <div class="container hero-content">
@@ -43,7 +46,6 @@
     <div class="hero-actions">
       <a class="button primary" href="research.html">Explore Research</a>
       <a class="button secondary" href="team.html">Meet the Team</a>
-      <button class="button motion-toggle" type="button" aria-pressed="false" hidden>Pause animation</button>
     </div>
   </div>
 </section>
@@ -63,7 +65,7 @@
           <article class="card news-card">
             <div class="news-meta"><span class="grant-badge">ARDF</span><time datetime="2026-08-17">17 August 2026</time></div>
             <h3>ARDF funds engineered muscle models for drug toxicology</h3>
-            <p>The Alternatives Research &amp; Development Foundation has awarded Parth Chansoria <strong>US$49,995</strong> through its 2026 Annual Open Grant programme.</p>
+            <p>The Alternatives Research &amp; Development Foundation has awarded Parth Chansoria a grant through its 2026 Annual Open Grant programme.</p>
             <p>The funded project, &ldquo;Engineered tissue models of skeletal muscle disease in an automated platform for high throughput drug toxicology,&rdquo; supports the development of non-animal methods for biomedical research and testing. Funding begins on 1 October 2026.</p>
             <a class="news-link" href="research.html#tab1">Explore our tissue-model research <span aria-hidden="true">&rarr;</span></a>
           </article>
