@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>METS Group</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="hero-dots.js" defer></script>
    <link rel="icon" type="image/png" sizes="32x32" href="Favicon.png?v=3" />
 <link rel="shortcut icon" href="Favicon.png?v=3" />
 <link rel="apple-touch-icon" href="Favicon.png?v=3" />
@@ -22,6 +23,7 @@
 
       <nav class="nav">
         <a href="index.html" class="active">Home</a>
+        <a href="#news">News</a>
         <a href="research.html">Research</a>
         <a href="team.html">Team</a>
         <a href="imprint.html">Imprint</a>
@@ -32,16 +34,8 @@
 
   <main>
     <section class="hero">
-  <!-- Background Video -->
-  <video class="hero-video" autoplay loop muted playsinline preload="auto">
-    <source src="bg-video.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
+  <canvas class="hero-dots" aria-hidden="true"></canvas>
 
-  <!-- Semi-transparent overlay for text legibility -->
-  <div class="hero-overlay"></div>
-
-  <!-- Hero Content -->
   <!-- Hero Content -->
   <div class="container hero-content">
     <img src="Logo.png" alt="METS logo" class="content-logo" />
@@ -49,9 +43,33 @@
     <div class="hero-actions">
       <a class="button primary" href="research.html">Explore Research</a>
       <a class="button secondary" href="team.html">Meet the Team</a>
+      <button class="button motion-toggle" type="button" aria-pressed="false" hidden>Pause animation</button>
     </div>
   </div>
 </section>
+
+    <section class="section news-section" id="news" aria-labelledby="news-title">
+      <div class="container">
+        <p class="eyebrow">From the lab</p>
+        <h2 class="page-title" id="news-title">Latest News</h2>
+        <div class="news-grid">
+          <article class="card news-card">
+            <div class="news-meta"><span class="grant-badge">ERC</span><time datetime="2026-09-03">3 September 2026</time></div>
+            <h3>Parth Chansoria awarded an ERC Starting Grant</h3>
+            <p>The European Research Council has awarded Parth Chansoria a Starting Grant to advance ultrasound-based biofabrication for muscle regeneration.</p>
+            <p>The project will develop biocompatible soft materials that crosslink where ultrasound waves overlap, together with the ultrasound device needed to form precise tissue scaffolds. The goal is to enable tissue engineering directly inside the body.</p>
+            <a class="news-link" href="https://ethz.ch/en/news-and-events/eth-news/news/2026/09/erc-starting-grants-for-six-eth-researchers.html">Read the ETH Zurich announcement <span aria-hidden="true">&rarr;</span></a>
+          </article>
+          <article class="card news-card">
+            <div class="news-meta"><span class="grant-badge">ARDF</span><time datetime="2026-08-17">17 August 2026</time></div>
+            <h3>ARDF funds engineered muscle models for drug toxicology</h3>
+            <p>The Alternatives Research &amp; Development Foundation has awarded Parth Chansoria <strong>US$49,995</strong> through its 2026 Annual Open Grant programme.</p>
+            <p>The funded project, &ldquo;Engineered tissue models of skeletal muscle disease in an automated platform for high throughput drug toxicology,&rdquo; supports the development of non-animal methods for biomedical research and testing. Funding begins on 1 October 2026.</p>
+            <a class="news-link" href="research.html#tab1">Explore our tissue-model research <span aria-hidden="true">&rarr;</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
 
    <section class="section">
   <div class="container">
