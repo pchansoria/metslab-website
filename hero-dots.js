@@ -13,7 +13,7 @@
   hero.prepend(canvas);
   const context = canvas.getContext('2d');
   if (!context) return;
-  const colors = ['#557f8c', '#618b96'];
+  const colors = ['#39788a', '#4b8392'];
   const pointer = { x: 0, y: 0, active: false };
   let width = 0;
   let height = 0;
@@ -38,8 +38,8 @@
       vy: (Math.random() - 0.5) * 8,
       offsetX: 0,
       offsetY: 0,
-      radius: 0.65 + Math.random() * 0.5,
-      opacity: 0.14 + Math.random() * 0.08,
+      radius: 0.85 + Math.random() * 0.45,
+      opacity: 0.28 + Math.random() * 0.1,
       color: colors[Math.floor(Math.random() * colors.length)]
     }));
     draw(0);
@@ -69,8 +69,8 @@
 
     // Nearby nodes form a fine, slowly changing mesh with gently fading edges.
     const reach = Math.min(200, Math.max(145, width * 0.16));
-    context.strokeStyle = '#557f8c';
-    context.lineWidth = 0.65;
+    context.strokeStyle = '#39788a';
+    context.lineWidth = 1;
     for (let i = 0; i < dots.length; i++) {
       const a = dots[i];
       for (let j = i + 1; j < dots.length; j++) {
@@ -81,7 +81,7 @@
         const by = b.y + b.offsetY;
         const distance = Math.hypot(ax - bx, ay - by);
         if (distance >= reach) continue;
-        context.globalAlpha = 0.15 * (1 - distance / reach);
+        context.globalAlpha = 0.34 * (1 - distance / reach);
         context.beginPath();
         context.moveTo(ax, ay);
         context.lineTo(bx, by);
