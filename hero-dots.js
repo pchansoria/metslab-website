@@ -30,7 +30,7 @@
     canvas.width = Math.round(width * ratio);
     canvas.height = Math.round(height * ratio);
     context.setTransform(ratio, 0, 0, ratio, 0, 0);
-    const count = Math.min(85, Math.max(18, Math.round(width * height / 14000)));
+    const count = Math.min(140, Math.max(28, Math.round(width * height / 9000)));
     dots = Array.from({ length: count }, () => ({
       x: Math.random() * width,
       y: Math.random() * height,
