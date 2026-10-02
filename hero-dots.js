@@ -1,4 +1,4 @@
-/* Decorative, dot-only particle field. No libraries or external requests. */
+/* Subtle animated network. No libraries or external requests. */
 (() => {
   'use strict';
 
@@ -13,7 +13,7 @@
   hero.prepend(canvas);
   const context = canvas.getContext('2d');
   if (!context) return;
-  const colors = ['#168c9b', '#2878a2', '#65aba9'];
+  const colors = ['#557f8c', '#618b96'];
   const pointer = { x: 0, y: 0, active: false };
   let width = 0;
   let height = 0;
@@ -30,16 +30,16 @@
     canvas.width = Math.round(width * ratio);
     canvas.height = Math.round(height * ratio);
     context.setTransform(ratio, 0, 0, ratio, 0, 0);
-    const count = Math.min(240, Math.max(70, Math.round(width * height / 4000)));
+    const count = Math.min(85, Math.max(18, Math.round(width * height / 14000)));
     dots = Array.from({ length: count }, () => ({
       x: Math.random() * width,
       y: Math.random() * height,
-      vx: (Math.random() - 0.5) * 14,
-      vy: (Math.random() - 0.5) * 14,
+      vx: (Math.random() - 0.5) * 8,
+      vy: (Math.random() - 0.5) * 8,
       offsetX: 0,
       offsetY: 0,
-      radius: 1.5 + Math.random() * 2.8,
-      opacity: 0.22 + Math.random() * 0.28,
+      radius: 0.65 + Math.random() * 0.5,
+      opacity: 0.14 + Math.random() * 0.08,
       color: colors[Math.floor(Math.random() * colors.length)]
     }));
     draw(0);
@@ -57,7 +57,7 @@
         const dy = dot.y - pointer.y;
         const distance = Math.hypot(dx, dy);
         if (distance < 150) {
-          const force = (1 - distance / 150) * 48;
+          const force = (1 - distance / 150) * 18;
           targetX = dx / (distance || 1) * force;
           targetY = dy / (distance || 1) * force;
         }
@@ -65,6 +65,31 @@
       const ease = seconds > 0 ? 1 - Math.exp(-seconds * 7) : 1;
       dot.offsetX += (targetX - dot.offsetX) * ease;
       dot.offsetY += (targetY - dot.offsetY) * ease;
+    }
+
+    // Nearby nodes form a fine, slowly changing mesh with gently fading edges.
+    const reach = Math.min(200, Math.max(145, width * 0.16));
+    context.strokeStyle = '#557f8c';
+    context.lineWidth = 0.65;
+    for (let i = 0; i < dots.length; i++) {
+      const a = dots[i];
+      for (let j = i + 1; j < dots.length; j++) {
+        const b = dots[j];
+        const ax = a.x + a.offsetX;
+        const ay = a.y + a.offsetY;
+        const bx = b.x + b.offsetX;
+        const by = b.y + b.offsetY;
+        const distance = Math.hypot(ax - bx, ay - by);
+        if (distance >= reach) continue;
+        context.globalAlpha = 0.15 * (1 - distance / reach);
+        context.beginPath();
+        context.moveTo(ax, ay);
+        context.lineTo(bx, by);
+        context.stroke();
+      }
+    }
+
+    for (const dot of dots) {
       context.globalAlpha = dot.opacity;
       context.fillStyle = dot.color;
       context.beginPath();
@@ -106,3 +131,4 @@
   syncAnimation();
   });
 })();
+
