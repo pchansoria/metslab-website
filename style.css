@@ -459,6 +459,10 @@ a:hover {
   object-fit: contain;
   display: block;
 }
+.funding-logo[src="erc-logo.png"] {
+  height: 90px;
+}
+
 .content-logo {
   height: 64px;
   width: auto;
@@ -570,3 +574,4 @@ a:hover {
   color: #2563eb;
   transform: translateX(3px); /* Subtle rightward movement on hover */
 }
+
