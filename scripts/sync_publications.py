@@ -87,7 +87,7 @@ def render(records, settings):
         venue = esc(record['journal']) + (' · Preprint' if preprint else '')
         authors = ', '.join(record['authors'])
         cards.append(f'''<article class="card publication-card">
-  <div class="news-meta"><span class="grant-badge">{record['role']}</span><time datetime="{record['date']}">{date_label(record['date'])}</time></div>
+  <div class="news-meta"><time datetime="{record['date']}">{date_label(record['date'])}</time></div>
   <h3><a href="https://doi.org/{doi}">{esc(record['title'])}</a></h3>
   <p class="publication-authors">{esc(authors)}</p>
   <p><strong>{venue}</strong></p>
