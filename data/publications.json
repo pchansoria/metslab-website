@@ -1,0 +1,91 @@
+[
+  {
+    "doi": "10.64898/2026.09.24.750079",
+    "title": "Stimulatrix: An open-source automated platform for high-throughput functional characterization of engineered contractile tissues",
+    "authors": [
+      "M. Winkelbauer",
+      "J. Bast",
+      "E. S. Casalino",
+      "M. Bulatova",
+      "M. Generali",
+      "S. Mohammed",
+      "G. D’Hulst",
+      "F. Paneni",
+      "K. De Bock",
+      "T. Laumonier",
+      "P. Katiyar",
+      "O. Bar-Nur",
+      "Parth Chansoria"
+    ],
+    "date": "2026-09-25",
+    "journal": "bioRxiv",
+    "type": "posted-content",
+    "superseded": false,
+    "last_author": true,
+    "role": "Last author"
+  },
+  {
+    "doi": "10.1016/j.tibtech.2026.01.014",
+    "title": "Epicardial patches for myocardial repair: circumventing barriers to heal ischemic heart tissue",
+    "authors": [
+      "Michael Winkelbauer",
+      "Melanie Generali",
+      "Ke Cheng",
+      "Maximilian Y. Emmert",
+      "Parth Chansoria"
+    ],
+    "date": "2026-03-06",
+    "journal": "Trends in Biotechnology",
+    "type": "journal-article",
+    "superseded": false,
+    "last_author": true,
+    "role": "Last author"
+  },
+  {
+    "doi": "10.1002/advs.202512727",
+    "title": "Prolonged Cell Encapsulation and Gravity‐independent Filamented Light Biofabrication of Muscle Constructs",
+    "authors": [
+      "Michael Winkelbauer",
+      "Jakub Janiak",
+      "Johannes Windisch",
+      "Hao Liu",
+      "Maria Bulatova",
+      "Max Von Witzleben",
+      "Hugo Oliveira",
+      "Finn Dani",
+      "Richard Frank Richter",
+      "Nicolas L’Heureux",
+      "Ori Bar‐Nur",
+      "Michael Gelinsky",
+      "Marcy Zenobi‐Wong",
+      "Parth Chansoria"
+    ],
+    "date": "2025-09-23",
+    "journal": "Advanced Science",
+    "type": "journal-article",
+    "superseded": false,
+    "last_author": true,
+    "role": "Last author"
+  },
+  {
+    "doi": "10.1002/adhm.202405105",
+    "title": "Rapid Deep Vat Printing Using Photoclickable Collagen‐Based Bioresins",
+    "authors": [
+      "Michael Winkelbauer",
+      "Amelia Hasenauer",
+      "Dominic Rütsche",
+      "Hao Liu",
+      "Jakub Janiak",
+      "Michael Nguyen",
+      "Karen L. Christman",
+      "Marcy Zenobi‐Wong",
+      "Parth Chansoria"
+    ],
+    "date": "2025-07-04",
+    "journal": "Advanced Healthcare Materials",
+    "type": "journal-article",
+    "superseded": false,
+    "last_author": true,
+    "role": "Last author"
+  }
+]

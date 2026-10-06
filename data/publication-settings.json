@@ -1,0 +1,46 @@
+{
+  "orcid": "0000-0002-6107-6848",
+  "name": "Parth Chansoria",
+  "news_since": "2025-01-01",
+  "co_corresponding": {},
+  "overrides": {
+    "10.64898/2026.09.24.750079": {
+      "title": "Stimulatrix: An open-source automated platform for high-throughput functional characterization of engineered contractile tissues",
+      "authors": [
+        "M. Winkelbauer",
+        "J. Bast",
+        "E. S. Casalino",
+        "M. Bulatova",
+        "M. Generali",
+        "S. Mohammed",
+        "G. D’Hulst",
+        "F. Paneni",
+        "K. De Bock",
+        "T. Laumonier",
+        "P. Katiyar",
+        "O. Bar-Nur",
+        "Parth Chansoria"
+      ],
+      "date": "2026-09-25",
+      "journal": "bioRxiv",
+      "type": "posted-content",
+      "news_title": "Stimulatrix preprint now available",
+      "news_text": "We have shared Stimulatrix, an open-source automated platform for high-throughput functional characterization of engineered contractile tissues. The work is available as a bioRxiv preprint."
+    },
+    "10.1016/j.tibtech.2026.01.014": {
+      "date": "2026-03-06",
+      "news_title": "New article on epicardial patches for myocardial repair",
+      "news_text": "Our article in Trends in Biotechnology examines approaches to overcome the epicardial barrier, together with material, safety and clinical considerations for myocardial repair."
+    },
+    "10.1002/advs.202512727": {
+      "date": "2025-09-23",
+      "news_title": "Muscle biofabrication in microgravity",
+      "news_text": "Our study in Advanced Science presents gravity-independent filamented light biofabrication of muscle constructs and bioresins that support prolonged cell encapsulation before printing."
+    },
+    "10.1002/adhm.202405105": {
+      "date": "2025-07-04",
+      "news_title": "Photoclickable collagen bioresins for rapid printing",
+      "news_text": "Our study in Advanced Healthcare Materials introduces photoclickable collagen-based bioresins for rapid deep vat printing of complex tissue constructs."
+    }
+  }
+}

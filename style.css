@@ -233,15 +233,44 @@ body {
 }
 
 .news-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  display: flex;
   gap: 22px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-color: #7da7b1 #dce8ea;
+  scrollbar-width: thin;
+  padding: 4px 2px 18px;
 }
 
 .news-card {
   display: flex;
   flex-direction: column;
   border-top: 3px solid #168c9b;
+  flex: 0 0 calc((100% - 22px) / 2);
+  scroll-snap-align: start;
+}
+
+.section-heading { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 24px; }
+.section-heading .page-title { margin-bottom: 0; }
+.section-heading .news-link { margin-top: 0; padding-top: 0; }
+.carousel-controls { display: flex; gap: 10px; }
+.carousel-button { width: 44px; height: 44px; border: 1px solid #b7cdd2; background: #fff; color: #0d6570; border-radius: 50%; font-size: 1.25rem; cursor: pointer; }
+.carousel-button:disabled { opacity: 0.35; cursor: default; }
+.carousel-button:focus-visible, .news-grid:focus-visible { outline: 2px solid #147f91; outline-offset: 4px; }
+.publication-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+.publication-card { display: flex; flex-direction: column; }
+.publication-card h3 { font-size: 1.2rem; line-height: 1.4; }
+.publication-card h3 a { text-decoration: none; }
+.publication-authors { font-size: 0.9rem; }
+.publication-intro { max-width: 760px; }
+.profile-links { margin-bottom: 30px; }
+#imprint { scroll-margin-top: 24px; }
+
+@media (max-width: 700px) {
+  .news-card { flex-basis: 88%; }
+  .publication-grid { grid-template-columns: 1fr; }
+  .section-heading { align-items: flex-start; }
+  .section-heading > .news-link { max-width: 120px; font-size: 0.9rem; }
 }
 
 .news-meta {
@@ -349,7 +378,6 @@ a:hover {
 
 @media (max-width: 900px) {
   .grid-3,
-  .news-grid,
   .team-grid {
     grid-template-columns: 1fr;
   }
@@ -574,4 +602,3 @@ a:hover {
   color: #2563eb;
   transform: translateX(3px); /* Subtle rightward movement on hover */
 }
-

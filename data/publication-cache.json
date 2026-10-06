@@ -1,0 +1,612 @@
+{
+  "10.1002/adfm.202207590": {
+    "doi": "10.1002/adfm.202207590",
+    "title": "Rationally Designed Anisotropic and Auxetic Hydrogel Patches for Adaptation to Dynamic Organs",
+    "authors": [
+      "Parth Chansoria",
+      "John Blackwell",
+      "Emma L. Etter",
+      "Emily E. Bonacquisti",
+      "Natalie Jasiewicz",
+      "Taylor Neal",
+      "Sarah Alhajli Kamal",
+      "Jiaul Hoque",
+      "Shyni Varghese",
+      "Thomas Egan",
+      "Juliane Nguyen"
+    ],
+    "date": "2022-08-16",
+    "journal": "Advanced Functional Materials",
+    "type": "journal-article",
+    "superseded": false
+  },
+  "10.1002/adfm.202416557": {
+    "doi": "10.1002/adfm.202416557",
+    "title": "An Implantable Biohybrid Neural Interface Toward Synaptic Deep Brain Stimulation",
+    "authors": [
+      "Léo Sifringer",
+      "Alex Fratzl",
+      "Blandine F. Clément",
+      "Parth Chansoria",
+      "Leah S. Mönkemöller",
+      "Jens Duru",
+      "Stephan J. Ihle",
+      "Simon Steffens",
+      "Anna Beltraminelli",
+      "Eylul Ceylan",
+      "Julian Hengsteler",
+      "Benedikt Maurer",
+      "Sean M. Weaver",
+      "Christina M. Tringides",
+      "Katarina Vulić",
+      "Srinivas Madduri",
+      "Marcy Zenobi‐Wong",
+      "Botond Roska",
+      "János Vörös",
+      "Tobias Ruff"
+    ],
+    "date": "2025-02-09",
+    "journal": "Advanced Functional Materials",
+    "type": "journal-article",
+    "superseded": false
+  },
+  "10.1002/adhm.202102351": {
+    "doi": "10.1002/adhm.202102351",
+    "title": "Multiscale Anisotropic Tissue Biofabrication via Bulk Acoustic Patterning of Cells and Functional Additives in Hybrid Bioinks",
+    "authors": [
+      "Parth Chansoria",
+      "Suleman Asif",
+      "Nithin Gupta",
+      "Jorge Piedrahita",
+      "Rohan A. Shirwaiker"
+    ],
+    "date": "2022-01-27",
+    "journal": "Advanced Healthcare Materials",
+    "type": "journal-article",
+    "superseded": false
+  },
+  "10.1002/adhm.202405105": {
+    "doi": "10.1002/adhm.202405105",
+    "title": "Rapid Deep Vat Printing Using Photoclickable Collagen‐Based Bioresins",
+    "authors": [
+      "Michael Winkelbauer",
+      "Amelia Hasenauer",
+      "Dominic Rütsche",
+      "Hao Liu",
+      "Jakub Janiak",
+      "Michael Nguyen",
+      "Karen L. Christman",
+      "Marcy Zenobi‐Wong",
+      "Parth Chansoria"
+    ],
+    "date": "2025-07-04",
+    "journal": "Advanced Healthcare Materials",
+    "type": "journal-article",
+    "superseded": false
+  },
+  "10.1002/adma.202204301": {
+    "doi": "10.1002/adma.202204301",
+    "title": "Filamented Light (FLight) Biofabrication of Highly Aligned Tissue‐Engineered Constructs",
+    "authors": [
+      "Hao Liu",
+      "Parth Chansoria",
+      "Paul Delrot",
+      "Emmanouil Angelidakis",
+      "Riccardo Rizzo",
+      "Dominic Rütsche",
+      "Lee Ann Applegate",
+      "Damien Loterie",
+      "Marcy Zenobi‐Wong"
+    ],
+    "date": "2022-10-09",
+    "journal": "Advanced Materials",
+    "type": "journal-article",
+    "superseded": false
+  },
+  "10.1002/adma.202419350": {
+    "doi": "10.1002/adma.202419350",
+    "title": "Structured Light Projection Using Image Guide Fibers for In Situ Photo‐biofabrication",
+    "authors": [
+      "Parth Chansoria",
+      "Michael Winkelbauer",
+      "Shipin Zhang",
+      "Jakub Janiak",
+      "Hao Liu",
+      "Dimitar Boev",
+      "Andrea Morandi",
+      "Rachel Grange",
+      "Marcy Zenobi‐Wong"
+    ],
+    "date": "2025-04-29",
+    "journal": "Advanced Materials",
+    "type": "journal-article",
+    "superseded": false
+  },
+  "10.1002/admt.202201871": {
+    "doi": "10.1002/admt.202201871",
+    "title": "Multiscale Hybrid Fabrication: Volumetric Printing Meets Two‐Photon Ablation",
+    "authors": [
+      "Riccardo Rizzo",
+      "Dominic Rütsche",
+      "Hao Liu",
+      "Parth Chansoria",
+      "Anny Wang",
+      "Amelia Hasenauer",
+      "Marcy Zenobi‐Wong"
+    ],
+    "date": "2023-03-19",
+    "journal": "Advanced Materials Technologies",
+    "type": "journal-article",
+    "superseded": false
+  },
+  "10.1002/advs.202300912": {
+    "doi": "10.1002/advs.202300912",
+    "title": "Synergizing Algorithmic Design, Photoclick Chemistry and Multi‐Material Volumetric Printing for Accelerating Complex Shape Engineering",
+    "authors": [
+      "Parth Chansoria",
+      "Dominic Rütsche",
+      "Anny Wang",
+      "Hao Liu",
+      "Davide D'Angella",
+      "Riccardo Rizzo",
+      "Amelia Hasenauer",
+      "Patrick Weber",
+      "Wanwan Qiu",
+      "Nafeesah Bte Mohamed Ibrahim",
+      "Nina Korshunova",
+      "Xiao‐Hua Qin",
+      "Marcy Zenobi‐Wong"
+    ],
+    "date": "2023-07-03",
+    "journal": "Advanced Science",
+    "type": "journal-article",
+    "superseded": false
+  },
+  "10.1002/advs.202512727": {
+    "doi": "10.1002/advs.202512727",
+    "title": "Prolonged Cell Encapsulation and Gravity‐independent Filamented Light Biofabrication of Muscle Constructs",
+    "authors": [
+      "Michael Winkelbauer",
+      "Jakub Janiak",
+      "Johannes Windisch",
+      "Hao Liu",
+      "Maria Bulatova",
+      "Max Von Witzleben",
+      "Hugo Oliveira",
+      "Finn Dani",
+      "Richard Frank Richter",
+      "Nicolas L’Heureux",
+      "Ori Bar‐Nur",
+      "Michael Gelinsky",
+      "Marcy Zenobi‐Wong",
+      "Parth Chansoria"
+    ],
+    "date": "2025-09-23",
+    "journal": "Advanced Science",
+    "type": "journal-article",
+    "superseded": false
+  },
+  "10.1002/wnan.1673": {
+    "doi": "10.1002/wnan.1673",
+    "title": "Process hybridization schemes for multiscale engineered tissue biofabrication",
+    "authors": [
+      "Parth Chansoria",
+      "Karl Schuchard",
+      "Rohan A. Shirwaiker"
+    ],
+    "date": "2020-10-21",
+    "journal": "WIREs Nanomedicine and Nanobiotechnology",
+    "type": "journal-article",
+    "superseded": false
+  },
+  "10.1016/j.addma.2020.101042": {
+    "doi": "10.1016/j.addma.2020.101042",
+    "title": "3D bioprinting of anisotropic engineered tissue constructs with ultrasonically induced cell patterning",
+    "authors": [
+      "Parth Chansoria",
+      "Rohan Shirwaiker"
+    ],
+    "date": "2020-03-01",
+    "journal": "Additive Manufacturing",
+    "type": "journal-article",
+    "superseded": false
+  },
+  "10.1016/j.jmapro.2020.04.029": {
+    "doi": "10.1016/j.jmapro.2020.04.029",
+    "title": "Ultrasound-assisted vat photopolymerization 3D printing of preferentially organized carbon fiber reinforced polymer composites",
+    "authors": [
+      "Suleman Asif",
+      "Parth Chansoria",
+      "Rohan Shirwaiker"
+    ],
+    "date": "2020-08-01",
+    "journal": "Journal of Manufacturing Processes",
+    "type": "journal-article",
+    "superseded": false
+  },
+  "10.1016/j.mtbio.2025.101471": {
+    "doi": "10.1016/j.mtbio.2025.101471",
+    "title": "Filamented hydrogels as tunable conduits for guiding neurite outgrowth",
+    "authors": [
+      "Hao Liu",
+      "Anna Puiggalí-Jou",
+      "Parth Chansoria",
+      "Jakub Janiak",
+      "Marcy Zenobi-Wong"
+    ],
+    "date": "2025-04-01",
+    "journal": "Materials Today Bio",
+    "type": "journal-article",
+    "superseded": false
+  },
+  "10.1016/j.tibtech.2021.07.001": {
+    "doi": "10.1016/j.tibtech.2021.07.001",
+    "title": "Regenerating dynamic organs using biomimetic patches",
+    "authors": [
+      "Parth Chansoria",
+      "Emma L. Etter",
+      "Juliane Nguyen"
+    ],
+    "date": "2022-03-01",
+    "journal": "Trends in Biotechnology",
+    "type": "journal-article",
+    "superseded": false
+  },
+  "10.1016/j.tibtech.2022.09.003": {
+    "doi": "10.1016/j.tibtech.2022.09.003",
+    "title": "Untethered: using remote magnetic fields for regenerative medicine",
+    "authors": [
+      "Parth Chansoria",
+      "Hao Liu",
+      "Michael G. Christiansen",
+      "Simone Schürle-Finke",
+      "Marcy Zenobi-Wong"
+    ],
+    "date": "2023-05-01",
+    "journal": "Trends in Biotechnology",
+    "type": "journal-article",
+    "superseded": false
+  },
+  "10.1016/j.tibtech.2026.01.014": {
+    "doi": "10.1016/j.tibtech.2026.01.014",
+    "title": "Epicardial patches for myocardial repair: circumventing barriers to heal ischemic heart tissue",
+    "authors": [
+      "Michael Winkelbauer",
+      "Melanie Generali",
+      "Ke Cheng",
+      "Maximilian Y. Emmert",
+      "Parth Chansoria"
+    ],
+    "date": "2026-03-06",
+    "journal": "Trends in Biotechnology",
+    "type": "journal-article",
+    "superseded": false
+  },
+  "10.1021/acs.chemrev.4c00134": {
+    "doi": "10.1021/acs.chemrev.4c00134",
+    "title": "Light from Afield: Fast, High-Resolution, and Layer-Free Deep Vat 3D Printing",
+    "authors": [
+      "Parth Chansoria",
+      "Riccardo Rizzo",
+      "Dominic Rütsche",
+      "Hao Liu",
+      "Paul Delrot",
+      "Marcy Zenobi-Wong"
+    ],
+    "date": "2024-07-05",
+    "journal": "Chemical Reviews",
+    "type": "journal-article",
+    "superseded": false
+  },
+  "10.1021/acsbiomaterials.0c00806": {
+    "doi": "10.1021/acsbiomaterials.0c00806",
+    "title": "Effects of Autoclaving, EtOH, and UV Sterilization on the Chemical, Mechanical, Printability, and Biocompatibility Characteristics of Alginate",
+    "authors": [
+      "Parth Chansoria",
+      "Lokesh Karthik Narayanan",
+      "Madison Wood",
+      "Claudia Alvarado",
+      "Annie Lin",
+      "Rohan A. Shirwaiker"
+    ],
+    "date": "2020-07-21",
+    "journal": "ACS Biomaterials Science & Engineering",
+    "type": "journal-article",
+    "superseded": false
+  },
+  "10.1021/acsbiomaterials.1c00635": {
+    "doi": "10.1021/acsbiomaterials.1c00635",
+    "title": "Characterizing the Effects of Synergistic Thermal and Photo-Cross-Linking during Biofabrication on the Structural and Functional Properties of Gelatin Methacryloyl (GelMA) Hydrogels",
+    "authors": [
+      "Parth Chansoria",
+      "Suleman Asif",
+      "Kathryn Polkoff",
+      "Jaewook Chung",
+      "Jorge A. Piedrahita",
+      "Rohan A. Shirwaiker"
+    ],
+    "date": "2021-10-01",
+    "journal": "ACS Biomaterials Science & Engineering",
+    "type": "journal-article",
+    "superseded": false
+  },
+  "10.1021/acsbiomaterials.2c00370": {
+    "doi": "10.1021/acsbiomaterials.2c00370",
+    "title": "Macroporous Aligned Hydrogel Microstrands for 3D Cell Guidance",
+    "authors": [
+      "Riccardo Rizzo",
+      "Angela Bonato",
+      "Parth Chansoria",
+      "Marcy Zenobi-Wong"
+    ],
+    "date": "2022-08-17",
+    "journal": "ACS Biomaterials Science & Engineering",
+    "type": "journal-article",
+    "superseded": false
+  },
+  "10.1038/s41598-019-50449-w": {
+    "doi": "10.1038/s41598-019-50449-w",
+    "title": "Characterizing the Process Physics of Ultrasound-Assisted Bioprinting",
+    "authors": [
+      "Parth Chansoria",
+      "Rohan Shirwaiker"
+    ],
+    "date": "2019-09-25",
+    "journal": "Scientific Reports",
+    "type": "journal-article",
+    "superseded": false
+  },
+  "10.1088/1758-5090/ab15cf": {
+    "doi": "10.1088/1758-5090/ab15cf",
+    "title": "Ultrasound-assisted biofabrication and bioprinting of preferentially aligned three-dimensional cellular constructs",
+    "authors": [
+      "Parth Chansoria",
+      "Lokesh Karthik Narayanan",
+      "Karl Schuchard",
+      "Rohan Shirwaiker"
+    ],
+    "date": "2019-04-26",
+    "journal": "Biofabrication",
+    "type": "journal-article",
+    "superseded": false
+  },
+  "10.1088/1758-5090/ad9cc2": {
+    "doi": "10.1088/1758-5090/ad9cc2",
+    "title": "Biofabrication of anisotropic articular cartilage based on decellularized extracellular matrix",
+    "authors": [
+      "Anna Puiggalí-Jou",
+      "Isabel Hui",
+      "Lucrezia Baldi",
+      "Rea Frischknecht",
+      "Maryam Asadikorayem",
+      "Jakub Janiak",
+      "Parth Chansoria",
+      "Maxwell C McCabe",
+      "Martin J Stoddart",
+      "Kirk C Hansen",
+      "Karen L Christman",
+      "Marcy Zenobi-Wong"
+    ],
+    "date": "2025-01-06",
+    "journal": "Biofabrication",
+    "type": "journal-article",
+    "superseded": false
+  },
+  "10.1101/2022.10.28.513651": {
+    "doi": "10.1101/2022.10.28.513651",
+    "title": "Multiscale Hybrid Fabrication: Volumetric Printing Meets Two-Photon Ablation",
+    "authors": [
+      "Riccardo Rizzo",
+      "Dominic Ruetsche",
+      "Hao Liu",
+      "Parth Chansoria",
+      "Anny Wang",
+      "Amelia Hasenauer",
+      "Marcy Zenobi-Wong"
+    ],
+    "date": "2022-10-28",
+    "journal": "bioRxiv",
+    "type": "posted-content",
+    "superseded": true
+  },
+  "10.1101/2022.11.25.517820": {
+    "doi": "10.1101/2022.11.25.517820",
+    "title": "Instantly adhesive and ultra-elastic patches for dynamic organ and wound repair",
+    "authors": [
+      "Parth Chansoria",
+      "Emily Bonacquisti",
+      "Mairead Heavey",
+      "Lina Le",
+      "Murali Kannan Maruthamuthu",
+      "John Blackwell",
+      "Natalie Jasiewicz",
+      "Rani S. Sellers",
+      "Robert Maile",
+      "Shannon Wallet",
+      "Thomas Egan",
+      "Juliane Nguyen"
+    ],
+    "date": "2022-11-27",
+    "journal": "bioRxiv",
+    "type": "posted-content",
+    "superseded": false
+  },
+  "10.1101/2022.11.29.518318": {
+    "doi": "10.1101/2022.11.29.518318",
+    "title": "Synergizing algorithmic design, photoclick chemistry and multi-material volumetric printing for accelerating complex shape engineering",
+    "authors": [
+      "Parth Chansoria",
+      "Dominic Rütsche",
+      "Anny Wang",
+      "Hao Liu",
+      "Davide D’Angella",
+      "Riccardo Rizzo",
+      "Amelia Hasenauer",
+      "Patrick Weber",
+      "Nafeesah Bte Mohamed Ibrahim",
+      "Nina Korshunova",
+      "Marcy Zenobi-Wong"
+    ],
+    "date": "2022-12-02",
+    "journal": "bioRxiv",
+    "type": "posted-content",
+    "superseded": true
+  },
+  "10.1101/2024.05.31.596665": {
+    "doi": "10.1101/2024.05.31.596665",
+    "title": "An implantable biohybrid nerve model towards synaptic deep brain stimulation",
+    "authors": [
+      "Léo Sifringer",
+      "Alex Fratzl",
+      "Blandine F. Clément",
+      "Parth Chansoria",
+      "Leah S. Mönkemöller",
+      "Jens Duru",
+      "Stephan J. Ihle",
+      "Simon Steffens",
+      "Anna Beltraminelli",
+      "Eylul Ceylan",
+      "Julian Hengsteler",
+      "Benedikt Maurer",
+      "Sean M. Weaver",
+      "Christina M. Tringides",
+      "Katarina Vulić",
+      "Srinivas Madduri",
+      "Marcy Zenobi-Wong",
+      "Botond Roska",
+      "János Vörös",
+      "Tobias Ruff"
+    ],
+    "date": "2024-06-03",
+    "journal": "bioRxiv",
+    "type": "posted-content",
+    "superseded": false
+  },
+  "10.1101/2024.07.30.605411": {
+    "doi": "10.1101/2024.07.30.605411",
+    "title": "Anisotropic Articular Cartilage Biofabrication based on Decellularized Extracellular Matrix",
+    "authors": [
+      "Anna Puiggalí-Jou",
+      "Isabel Hui",
+      "Lucrezia Baldi",
+      "Rea Frischknecht",
+      "Maryam Asadikorayem",
+      "Jakub Janiak",
+      "Parth Chansoria",
+      "Maxwell C. McCabe",
+      "Martin J. Stoddart",
+      "Kirk C. Hansen",
+      "Karen L. Christman",
+      "Marcy Zenobi-Wong"
+    ],
+    "date": "2024-07-30",
+    "journal": "bioRxiv",
+    "type": "posted-content",
+    "superseded": false
+  },
+  "10.1101/2024.12.10.627729": {
+    "doi": "10.1101/2024.12.10.627729",
+    "title": "Structured light projection using image guide fibers for in situ photo-biofabrication",
+    "authors": [
+      "Parth Chansoria",
+      "Michael Winkelbauer",
+      "Shipin Zhang",
+      "Jakub Janiak",
+      "Hao Liu",
+      "Marcy Zenobi-Wong"
+    ],
+    "date": "2024-12-16",
+    "journal": "bioRxiv",
+    "type": "posted-content",
+    "superseded": true
+  },
+  "10.1101/2025.02.03.636126": {
+    "doi": "10.1101/2025.02.03.636126",
+    "title": "Filamented Light (FLight) Bioprinting of Mini-Muscles with Self-Renewal Potential",
+    "authors": [
+      "Hao Liu",
+      "Michael Winkelbauer",
+      "Jakub Janiak",
+      "Ali Kerem Kalkan",
+      "Inseon Kim",
+      "Parth Chansoria",
+      "Ori Bar-Nur",
+      "Marcy Zenobi-Wong"
+    ],
+    "date": "2025-02-08",
+    "journal": "bioRxiv",
+    "type": "posted-content",
+    "superseded": true
+  },
+  "10.1101/2025.03.18.643642": {
+    "doi": "10.1101/2025.03.18.643642",
+    "title": "Volumetric printed biomimetic scaffolds support\n                  in vitro\n                  lactation of human milk-derived mammary epithelial cells",
+    "authors": [
+      "Amelia Hasenauer",
+      "Kajetana Bevc",
+      "Maxwell C. McCabe",
+      "Parth Chansoria",
+      "Anthony J. Saviola",
+      "Kirk C. Hansen",
+      "Karen L. Christman",
+      "Marcy Zenobi-Wong"
+    ],
+    "date": "2025-03-19",
+    "journal": "bioRxiv",
+    "type": "posted-content",
+    "superseded": false
+  },
+  "10.1115/msec2019-2816": {
+    "doi": "10.1115/msec2019-2816",
+    "title": "Ultrasonically-Induced Patterning of Viable Cells in Viscous Bioinks During 3D Biofabrication",
+    "authors": [
+      "Parth Chansoria",
+      "Rohan Shirwaiker"
+    ],
+    "date": "2019-11-27",
+    "journal": "Volume 1: Additive Manufacturing; Manufacturing Equipment and Systems; Bio and Sustainable Manufacturing",
+    "type": "proceedings-article",
+    "superseded": false
+  },
+  "10.1126/sciadv.adu5793": {
+    "doi": "10.1126/sciadv.adu5793",
+    "title": "Volumetric printed biomimetic scaffolds support in vitro lactation of human milk-derived mammary epithelial cells",
+    "authors": [
+      "Amelia Hasenauer",
+      "Kajetana Bevc",
+      "Maxwell C. McCabe",
+      "Parth Chansoria",
+      "Anthony J. Saviola",
+      "Kirk C. Hansen",
+      "Karen L. Christman",
+      "Marcy Zenobi-Wong"
+    ],
+    "date": "2025-06-06",
+    "journal": "Science Advances",
+    "type": "journal-article",
+    "superseded": false
+  },
+  "10.64898/2026.09.24.750079": {
+    "doi": "10.64898/2026.09.24.750079",
+    "title": "Stimulatrix: An open-source automated platform for high-throughput functional characterization of engineered contractile tissues",
+    "authors": [
+      "M. Winkelbauer",
+      "J. Bast",
+      "E. S. Casalino",
+      "M. Bulatova",
+      "M. Generali",
+      "S. Mohammed",
+      "G. D’Hulst",
+      "F. Paneni",
+      "K. De Bock",
+      "T. Laumonier",
+      "P. Katiyar",
+      "O. Bar-Nur",
+      "Parth Chansoria"
+    ],
+    "date": "2026-09-25",
+    "journal": "bioRxiv",
+    "type": "posted-content",
+    "superseded": false
+  }
+}

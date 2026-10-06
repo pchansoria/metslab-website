@@ -6,6 +6,7 @@
   <title>METS Group</title>
   <link rel="stylesheet" href="style.css" />
   <script src="hero-dots.js" defer></script>
+  <script src="news-carousel.js" defer></script>
    <link rel="icon" type="image/png" sizes="32x32" href="Favicon.png?v=3" />
 <link rel="shortcut icon" href="Favicon.png?v=3" />
 <link rel="apple-touch-icon" href="Favicon.png?v=3" />
@@ -23,10 +24,9 @@
 
       <nav class="nav">
         <a href="index.html" class="active">Home</a>
-        <a href="#news">News</a>
+        <a href="publications.html">Latest Publications</a>
         <a href="research.html">Research</a>
         <a href="team.html">Team</a>
-        <a href="imprint.html">Imprint</a>
         <a href="contact.html">Contact</a>
       </nav>
     </div>
@@ -52,27 +52,78 @@
 
     <section class="section news-section" id="news" aria-labelledby="news-title">
       <div class="container">
-        <p class="eyebrow">From the lab</p>
-        <h2 class="page-title" id="news-title">Latest News</h2>
-        <div class="news-grid">
-          <article class="card news-card">
+        <div class="section-heading"><div><p class="eyebrow">From the lab</p><h2 class="page-title" id="news-title">Latest News</h2></div><div class="carousel-controls"><button type="button" class="carousel-button" data-news-prev aria-label="Previous news">&larr;</button><button type="button" class="carousel-button" data-news-next aria-label="Next news">&rarr;</button></div></div>
+        <div class="news-grid" tabindex="0" role="region" aria-label="Latest lab news; scroll horizontally">
+<!-- news:start -->
+<article class="card news-card">
+  <div class="news-meta"><span class="grant-badge">Preprint</span><time datetime="2026-09-26">26 September 2026</time></div>
+  <h3>Stimulatrix preprint now available</h3><p>We have shared Stimulatrix, an open-source automated platform for high-throughput functional characterization of engineered contractile tissues. The work is available as a bioRxiv preprint.</p>
+  <a class="news-link" href="https://doi.org/10.64898/2026.09.24.750079">Read preprint <span aria-hidden="true">&rarr;</span></a>
+</article>
+<article class="card news-card">
             <div class="news-meta"><span class="grant-badge">ERC</span><time datetime="2026-09-03">3 September 2026</time></div>
             <h3>ERC Starting Grant for muscle regeneration</h3>
             <p>We were awarded a Starting Grant by the European Research Council to advance ultrasound-based biofabrication for muscle regeneration.</p>
             <p>The project will develop biocompatible soft materials that crosslink where ultrasound waves overlap, together with the ultrasound device needed to form precise tissue scaffolds. The goal is to enable tissue engineering directly inside the body.</p>
             <a class="news-link" href="https://ethz.ch/en/news-and-events/eth-news/news/2026/09/erc-starting-grants-for-six-eth-researchers.html">Read the ETH Zurich announcement <span aria-hidden="true">&rarr;</span></a>
           </article>
-          <article class="card news-card">
+<article class="card news-card">
             <div class="news-meta"><span class="grant-badge">ARDF</span><time datetime="2026-08-17">17 August 2026</time></div>
             <h3>ARDF grant for engineered muscle models</h3>
             <p>We were awarded a grant by the Alternatives Research &amp; Development Foundation through its 2026 Annual Open Grant programme.</p>
             <p>The funded project, &ldquo;Engineered tissue models of skeletal muscle disease in an automated platform for high throughput drug toxicology,&rdquo; supports the development of non-animal methods for biomedical research and testing. Funding begins on 1 October 2026.</p>
             <a class="news-link" href="research.html#tab1">Explore our tissue-model research <span aria-hidden="true">&rarr;</span></a>
           </article>
+<article class="card news-card">
+  <div class="news-meta"><span class="grant-badge">Publication</span><time datetime="2026-03-07">7 March 2026</time></div>
+  <h3>New article on epicardial patches for myocardial repair</h3><p>Our article in Trends in Biotechnology examines approaches to overcome the epicardial barrier, together with material, safety and clinical considerations for myocardial repair.</p>
+  <a class="news-link" href="https://doi.org/10.1016/j.tibtech.2026.01.014">Read article <span aria-hidden="true">&rarr;</span></a>
+</article>
+<article class="card news-card">
+  <div class="news-meta"><span class="grant-badge">Publication</span><time datetime="2025-09-24">24 September 2025</time></div>
+  <h3>Muscle biofabrication in microgravity</h3><p>Our study in Advanced Science presents gravity-independent filamented light biofabrication of muscle constructs and bioresins that support prolonged cell encapsulation before printing.</p>
+  <a class="news-link" href="https://doi.org/10.1002/advs.202512727">Read article <span aria-hidden="true">&rarr;</span></a>
+</article>
+<article class="card news-card">
+  <div class="news-meta"><span class="grant-badge">Publication</span><time datetime="2025-07-05">5 July 2025</time></div>
+  <h3>Photoclickable collagen bioresins for rapid printing</h3><p>Our study in Advanced Healthcare Materials introduces photoclickable collagen-based bioresins for rapid deep vat printing of complex tissue constructs.</p>
+  <a class="news-link" href="https://doi.org/10.1002/adhm.202405105">Read article <span aria-hidden="true">&rarr;</span></a>
+</article>
+<!-- news:end -->
         </div>
       </div>
     </section>
 
+    <section class="section" id="latest-publications" aria-labelledby="latest-publications-title">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">From our research</p><h2 class="page-title" id="latest-publications-title">Latest Publications</h2></div><a class="news-link" href="publications.html">View all publications &rarr;</a></div>
+        <div class="publication-grid">
+<!-- latest-publications:start -->
+<article class="card publication-card">
+  <div class="news-meta"><span class="grant-badge">Last author</span><time datetime="2026-09-25">25 September 2026</time></div>
+  <h3><a href="https://doi.org/10.64898/2026.09.24.750079">Stimulatrix: An open-source automated platform for high-throughput functional characterization of engineered contractile tissues</a></h3>
+  <p class="publication-authors">M. Winkelbauer, J. Bast, E. S. Casalino, M. Bulatova, M. Generali, S. Mohammed, G. D’Hulst, F. Paneni, K. De Bock, T. Laumonier, P. Katiyar, O. Bar-Nur, Parth Chansoria</p>
+  <p><strong>bioRxiv · Preprint</strong></p>
+  <a class="news-link" href="https://doi.org/10.64898/2026.09.24.750079">Read preprint <span aria-hidden="true">&rarr;</span></a>
+</article>
+<article class="card publication-card">
+  <div class="news-meta"><span class="grant-badge">Last author</span><time datetime="2026-03-06">6 March 2026</time></div>
+  <h3><a href="https://doi.org/10.1016/j.tibtech.2026.01.014">Epicardial patches for myocardial repair: circumventing barriers to heal ischemic heart tissue</a></h3>
+  <p class="publication-authors">Michael Winkelbauer, Melanie Generali, Ke Cheng, Maximilian Y. Emmert, Parth Chansoria</p>
+  <p><strong>Trends in Biotechnology</strong></p>
+  <a class="news-link" href="https://doi.org/10.1016/j.tibtech.2026.01.014">Read article <span aria-hidden="true">&rarr;</span></a>
+</article>
+<article class="card publication-card">
+  <div class="news-meta"><span class="grant-badge">Last author</span><time datetime="2025-09-23">23 September 2025</time></div>
+  <h3><a href="https://doi.org/10.1002/advs.202512727">Prolonged Cell Encapsulation and Gravity‐independent Filamented Light Biofabrication of Muscle Constructs</a></h3>
+  <p class="publication-authors">Michael Winkelbauer, Jakub Janiak, Johannes Windisch, Hao Liu, Maria Bulatova, Max Von Witzleben, Hugo Oliveira, Finn Dani, Richard Frank Richter, Nicolas L’Heureux, Ori Bar‐Nur, Michael Gelinsky, Marcy Zenobi‐Wong, Parth Chansoria</p>
+  <p><strong>Advanced Science</strong></p>
+  <a class="news-link" href="https://doi.org/10.1002/advs.202512727">Read article <span aria-hidden="true">&rarr;</span></a>
+</article>
+<!-- latest-publications:end -->
+        </div>
+      </div>
+    </section>
    <section class="section">
   <div class="container">
     <h2 class="page-title">Research Themes</h2>
@@ -113,6 +164,24 @@
     </div>
   </div>
 </section>
+  <template id="grant-news">
+<!-- grant-news:start -->
+          <article class="card news-card">
+            <div class="news-meta"><span class="grant-badge">ERC</span><time datetime="2026-09-03">3 September 2026</time></div>
+            <h3>ERC Starting Grant for muscle regeneration</h3>
+            <p>We were awarded a Starting Grant by the European Research Council to advance ultrasound-based biofabrication for muscle regeneration.</p>
+            <p>The project will develop biocompatible soft materials that crosslink where ultrasound waves overlap, together with the ultrasound device needed to form precise tissue scaffolds. The goal is to enable tissue engineering directly inside the body.</p>
+            <a class="news-link" href="https://ethz.ch/en/news-and-events/eth-news/news/2026/09/erc-starting-grants-for-six-eth-researchers.html">Read the ETH Zurich announcement <span aria-hidden="true">&rarr;</span></a>
+          </article>
+          <article class="card news-card">
+            <div class="news-meta"><span class="grant-badge">ARDF</span><time datetime="2026-08-17">17 August 2026</time></div>
+            <h3>ARDF grant for engineered muscle models</h3>
+            <p>We were awarded a grant by the Alternatives Research &amp; Development Foundation through its 2026 Annual Open Grant programme.</p>
+            <p>The funded project, &ldquo;Engineered tissue models of skeletal muscle disease in an automated platform for high throughput drug toxicology,&rdquo; supports the development of non-animal methods for biomedical research and testing. Funding begins on 1 October 2026.</p>
+            <a class="news-link" href="research.html#tab1">Explore our tissue-model research <span aria-hidden="true">&rarr;</span></a>
+          </article>
+<!-- grant-news:end -->
+  </template>
   </main>
 
   <footer class="site-footer">
@@ -129,7 +198,7 @@
 </div>
 
   <div class="container footer-row">
-    <p>© 2026 METS Lab</p>
+    <p>© 2026 METS Lab · <a href="contact.html#imprint">Imprint</a></p>
     <p>ETH Zurich · Zurich, Switzerland</p>
   </div>
 </footer>

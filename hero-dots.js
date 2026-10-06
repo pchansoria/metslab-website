@@ -21,6 +21,9 @@
   let frame = 0;
   let lastTime = 0;
   let visible = true;
+  let elapsed = 0;
+  let columns = 0;
+  let rows = 0;
 
   function resize() {
     const bounds = hero.getBoundingClientRect();
@@ -30,26 +33,36 @@
     canvas.width = Math.round(width * ratio);
     canvas.height = Math.round(height * ratio);
     context.setTransform(ratio, 0, 0, ratio, 0, 0);
-    const count = Math.min(140, Math.max(28, Math.round(width * height / 9000)));
-    dots = Array.from({ length: count }, () => ({
-      x: Math.random() * width,
-      y: Math.random() * height,
-      vx: (Math.random() - 0.5) * 8,
-      vy: (Math.random() - 0.5) * 8,
+    // One node per gently jittered lattice position. Bounded motion preserves
+    // even coverage instead of letting freely drifting particles form clusters.
+    columns = Math.max(2, Math.round(width / 135));
+    rows = Math.max(1, Math.round(height / 135));
+    const cellX = width / columns;
+    const cellY = height / rows;
+    dots = Array.from({ length: (columns + 1) * (rows + 1) }, (_, index) => {
+      const column = index % (columns + 1);
+      const row = Math.floor(index / (columns + 1));
+      const baseX = column * cellX + (Math.random() - 0.5) * cellX * 0.30;
+      const baseY = row * cellY + (Math.random() - 0.5) * cellY * 0.30;
+      return {
+      x: baseX, y: baseY, baseX, baseY,
+      phase: Math.random() * Math.PI * 2,
+      amplitude: Math.min(10, cellX * 0.08, cellY * 0.08),
       offsetX: 0,
       offsetY: 0,
       radius: 0.85 + Math.random() * 0.45,
       opacity: 0.28 + Math.random() * 0.1,
       color: colors[Math.floor(Math.random() * colors.length)]
-    }));
+    }; });
     draw(0);
   }
 
   function draw(seconds) {
     context.clearRect(0, 0, width, height);
+    elapsed += seconds;
     for (const dot of dots) {
-      dot.x = (dot.x + dot.vx * seconds + width) % width;
-      dot.y = (dot.y + dot.vy * seconds + height) % height;
+      dot.x = dot.baseX + Math.sin(elapsed * 0.23 + dot.phase) * dot.amplitude;
+      dot.y = dot.baseY + Math.cos(elapsed * 0.19 + dot.phase) * dot.amplitude;
       let targetX = 0;
       let targetY = 0;
       if (pointer.active && seconds > 0) {
@@ -67,21 +80,27 @@
       dot.offsetY += (targetY - dot.offsetY) * ease;
     }
 
-    // Nearby nodes form a fine, slowly changing mesh with gently fading edges.
-    const reach = Math.min(200, Math.max(145, width * 0.16));
+    // Adjacent lattice nodes form an evenly distributed triangular mesh.
     context.strokeStyle = '#39788a';
     context.lineWidth = 1;
     for (let i = 0; i < dots.length; i++) {
       const a = dots[i];
-      for (let j = i + 1; j < dots.length; j++) {
+      const column = i % (columns + 1);
+      const row = Math.floor(i / (columns + 1));
+      const neighbors = [];
+      if (column < columns) neighbors.push(i + 1);
+      if (row < rows) {
+        neighbors.push(i + columns + 1);
+        if ((column + row) % 2 === 0 && column < columns) neighbors.push(i + columns + 2);
+        else if (column > 0) neighbors.push(i + columns);
+      }
+      for (const j of neighbors) {
         const b = dots[j];
         const ax = a.x + a.offsetX;
         const ay = a.y + a.offsetY;
         const bx = b.x + b.offsetX;
         const by = b.y + b.offsetY;
-        const distance = Math.hypot(ax - bx, ay - by);
-        if (distance >= reach) continue;
-        context.globalAlpha = 0.34 * (1 - distance / reach);
+        context.globalAlpha = 0.14 + 0.025 * Math.sin(elapsed * 0.2 + a.phase);
         context.beginPath();
         context.moveTo(ax, ay);
         context.lineTo(bx, by);
@@ -131,4 +150,3 @@
   syncAnimation();
   });
 })();
-
